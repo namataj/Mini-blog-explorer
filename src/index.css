@@ -1,0 +1,130 @@
+
+
+
+
+
+/* Mini blog application system CSS */
+
+/* 1. Reset and global styles */ 
+
+body {
+  margin: auto;
+  font-family: Arial, sans-serif;
+  background-color: grey;
+  width: 50%;
+ 
+}
+
+/* 2. App layout */ 
+
+/* 3. Header */
+.Header {
+  text-align: center;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  margin: 20px;
+  padding: 2px;
+}
+
+/* 4. Controls: search, filter, refresh */ 
+
+.search-input, 
+.user-filter { 
+  height: 44px; 
+  border: 1px solid #d1d5db; 
+  border-radius: 10px; 
+  padding: 0 14px; 
+  color: black;
+
+}
+
+.user-filter {
+  color: black;
+}
+
+
+
+/* 5. user grid */
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 6. user card */ 
+.user-card {
+  background-color: white;
+  color: #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  min-height: 200px;
+}
+
+.user-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.user-card p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.user-card:hover {
+  transform: translatex(-4px); 
+}
+
+
+
+/* 7. Loading, error, empty states */ 
+
+.loading-error-status-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* 8. Responsive design */
+
+@media (max-width: 768px) {
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* 9. Spinner */
+/* I also have the alternative nf using a library called  react-spinner library that permits me  use it's prebuild component called ClipLoader */
+/* However, for training purpose, I used CSS to build y own spinner */
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 6px solid #ddd;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
