@@ -49,7 +49,7 @@ This project demonstrates the following React concepts:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/namataj/Mini-blog-explorer.git
 
 2.Navigate to the Project Folder
 cd mini-blog-explorer
